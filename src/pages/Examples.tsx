@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import HeroSection from '@/components/HeroSection';
@@ -27,14 +26,20 @@ const Examples = () => {
             {/* Left column: NYT iframe placeholder */}
             <div className="bg-gray-100 border border-gray-300 h-[400px] flex items-center justify-center">
               <p className="text-gray-500 text-center p-4">
-                iframe placeholder for NYT "Tracking the Trackers" interactive
+                <iframe src="https://www.nytimes.com/interactive/2014/science/tracking-the-trackers.html" width="100%" height="100%" frameBorder="0" allowFullScreen>
+                NYT's "Tracking the Trackers" interactive</iframe>
               </p>
             </div>
             
             {/* Right column: YouTube placeholder */}
             <div className="bg-gray-100 border border-gray-300 h-[400px] flex items-center justify-center">
               <p className="text-gray-500 text-center p-4">
-                Space for a 60-second YouTube clip (Vox explainer)
+              <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/HFyaW50GFOs?start=0&end=60"
+              title="How ads follow you around the internet – Vox" frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"
+              >Vox's 60-second explainer on data privacy</iframe>
+
               </p>
             </div>
           </div>
