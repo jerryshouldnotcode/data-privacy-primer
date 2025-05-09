@@ -1,6 +1,9 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -89,10 +92,37 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-mono;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold text-primary;
+    @apply font-semibold text-primary font-mono;
+  }
+  
+  code, pre {
+    @apply font-mono;
+  }
+}
+
+@layer components {
+  .tech-card {
+    @apply border border-gray-200 bg-white/80 backdrop-blur-sm shadow-sm rounded-md p-4 hover:shadow-terminal transition-all duration-300;
+  }
+  
+  .tech-button {
+    @apply bg-primary hover:bg-primary/90 text-white font-mono tracking-wide;
+  }
+  
+  .terminal-text {
+    @apply font-mono text-primary relative;
+  }
+  
+  .terminal-text::after {
+    content: "|";
+    @apply animate-terminal-blink ml-0.5;
+  }
+  
+  .tech-border {
+    @apply border border-gray-300 rounded-md p-4;
   }
 }
