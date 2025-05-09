@@ -18,7 +18,12 @@ const Home = () => {
         <div className="max-w-3xl mx-auto">
           <div className="prose lg:prose-xl">
             <p className="text-lg text-gray-700 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras porttitor metus nulla, vel fermentum nibh tincidunt et. Phasellus accumsan tellus ut libero.
+             
+              The apps we use everyday come at a cost - every click, photo, and shopping cart item is a data point that converges on our identity. 
+              What if the people and companies we trust with this info are the figures we need to be wary of?
+              
+              Enter the world of data brokers, customized ads, and why we should be more cautious about what we put online.
+ 
             </p>
             
             <div className="flex justify-center">
