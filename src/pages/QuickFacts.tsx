@@ -42,7 +42,7 @@ const QuickFacts = () => {
               Average data points a broker holds on one person
             </p>
             <Progress value={1000} max={1500} className="h-4" />
-            <p className="text-right text-sm mt-1">0 / 1500</p>
+            <p className="text-right text-sm mt-1">1000 / 1500</p>
           </div>
         </div>
       </div>
