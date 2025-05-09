@@ -28,9 +28,18 @@ const Research = () => {
           <div className="mt-12">
             <h3 className="text-xl font-semibold mb-4">Key Findings</h3>
             <ul className="list-disc pl-6 space-y-4">
-              <li className="text-lg">[Finding 1]</li>
-              <li className="text-lg">[Finding 2]</li>
-              <li className="text-lg">[Finding 3]</li>
+              <li className="text-lg">
+                Everybody knows that social media is a hotspot for harvesting data. What most don't know
+                is that it includes users and non-users alike (Federal Trade Commission, 2024).
+              </li>
+
+              <li className="text-lg">
+                Data brokers also trade data within themselves - extracted both online and offline.
+              </li>
+              <li className="text-lg">
+                Some Cybersecurity experts estimate that data brokers collect 
+                an average of 1,000 data points on each individual with an online presence. (Booth & CNBC, 2024)
+              </li>
             </ul>
           </div>
         </div>
