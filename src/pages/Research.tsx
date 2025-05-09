@@ -34,7 +34,7 @@ const Research = () => {
               </li>
 
               <li className="text-lg">
-                Data brokers also trade data within themselves - extracted both online and offline.
+                Data brokers also trade data between themselves - data extracted from both online and offline.
               </li>
               <li className="text-lg">
                 Some Cybersecurity experts estimate that data brokers collect 
