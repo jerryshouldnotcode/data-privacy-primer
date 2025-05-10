@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import HeroSection from '@/components/HeroSection';
@@ -18,9 +17,15 @@ const Research = () => {
           <h2 className="text-2xl font-bold mb-6 text-primary">How data leaves your device and lands on a broker's desk</h2>
           
           {/* Google Slides placeholder */}
-          <div className="bg-gray-100 border border-gray-300 h-[370px] w-full max-w-[650px] mx-auto mb-8 flex items-center justify-center">
+          <div className="bg-gray-100 border border-gray-300 h-[370px] w-full max-w-[800px] mx-auto mb-8 flex items-center justify-center">
             <p className="text-gray-500 text-center p-4">
-              Embed-ready placeholder for a 5-slide narrated Google Slides deck (650 × 370 px)
+            <iframe
+              src="https://www.loom.com/embed/f861bbe1a003481da4f9598f3f096688"
+              frameBorder="0"
+              allowFullScreen
+              className="w-full h-[370px] w-[800px] "
+              title="Loom Video"
+            ></iframe>
             </p>
           </div>
           
