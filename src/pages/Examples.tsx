@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import HeroSection from '@/components/HeroSection';
 
 const Examples = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
+
   // Placeholder data for scam emails/ads
   const scamExamples = [
-    { id: 1, caption: "Caption text for scam example 1" },
-    { id: 2, caption: "Caption text for scam example 2" },
-    { id: 3, caption: "Caption text for scam example 3" },
-    { id: 4, caption: "Caption text for scam example 4" },
+    { id: 1, caption: "Regular spam email advertising Bitcoin" },
+    { id: 2, caption: "Spam Japanese email advertising Bitcoin" },
+    { id: 3, caption: "Spam text I got from number impersonating the USPS" },
+    { id: 4, caption: "Spam text I got from number impersonating the US PS (2)" },
   ];
+
+  const openModal = (imageSrc) => {
+    setSelectedImage(imageSrc);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setSelectedImage('');
+  };
 
   return (
     <Layout>
@@ -26,8 +39,10 @@ const Examples = () => {
             {/* Left column: NYT iframe placeholder */}
             <div className="bg-gray-100 border border-gray-300 h-[400px] flex items-center justify-center">
               <p className="text-gray-500 text-center p-4">
-                <iframe src="https://www.zdnet.com/article/ftc-report-exposes-massive-data-collection-by-social-media-brands-how-to-protect-yourself/" width="400px" height="300h" frameBorder="0" >
-                ZDNet's article on data protection</iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/AU66C6HePfg?si=WMvcXL5AXd9bNRVd" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin"></iframe>
+                <span></span>
+                Murgia's personal reflection on data privacy - a TEDx Talk
               </p>
             </div>
             
@@ -39,7 +54,8 @@ const Examples = () => {
               title="How ads follow you around the internet – Vox" frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"
               >Vox's 60-second explainer on data privacy</iframe>
-
+              <span></span>
+              Vox's 60-second explainer on data privacy
               </p>
             </div>
           </div>
@@ -52,9 +68,10 @@ const Examples = () => {
                 {/* Screenshot placeholder */}
                 <div className="bg-gray-100 h-48 flex items-center justify-center">
                   <img
-                    src={`/scam-photos/IMG_696${example.id}${example.id === 1 ? '.JPG' : '.PNG'}`}
+                    src={`/scam-photos/IMG_696${example.id}.PNG`}
                     alt={`Scam example ${example.id}`}
-                    className="object-cover h-full w-full"
+                    className="object-cover h-full w-full cursor-pointer"
+                    onClick={() => openModal(`/scam-photos/IMG_696${example.id}.PNG`)}
                   />
                 </div>
                 {/* Caption */}
@@ -66,6 +83,13 @@ const Examples = () => {
           </div>
         </div>
       </div>
+
+      {/* Modal for expanded image */}
+      {isOpen && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50" onClick={closeModal}>
+          <img src={selectedImage} alt="Expanded view" className="max-w-full max-h-full" />
+        </div>
+      )}
     </Layout>
   );
 };

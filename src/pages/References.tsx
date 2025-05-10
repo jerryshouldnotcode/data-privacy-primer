@@ -18,18 +18,22 @@ const References = () => {
           
           <ol className="list-decimal pl-6 space-y-6">
             <li className="text-lg">
-            Booth, B., & CNBC. (2024, October 11). What internet data brokers have on you — and how you can start to get it back. NBC Los Angeles; NBC Southern California.
-            https://www.nbclosangeles.com/news/business/money-report/what-internet-data-brokers-have-on-you-and-how-you-can-start-to-get-it-back/3533513/
+              Booth, B., & CNBC. (2024, October 11). What internet data brokers have on you — and how you can start to get it back. NBC Los Angeles; NBC Southern California.
+              https://www.nbclosangeles.com/news/business/money-report/what-internet-data-brokers-have-on-you-and-how-you-can-start-to-get-it-back/3533513/
             </li>
 
             <li className="text-lg">
-            Federal Trade Commission. (2024, September 18). FTC Staff Report Finds Large Social Media and Video Streaming Companies Have Engaged in Vast Surveillance of Users with Lax Privacy Controls and Inadequate Safeguards for Kids and Teens. Federal Trade Commission. 
-            https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance 
+              Federal Trade Commission. (2024, September 18). FTC Staff Report Finds Large Social Media and Video Streaming Companies Have Engaged in Vast Surveillance of Users with Lax Privacy Controls and Inadequate Safeguards for Kids and Teens. Federal Trade Commission. 
+              https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance 
             </li>
 
             <li className="text-lg">
               Ferraro, A. (2022). What are Data Brokers? Everything You Need to Know. Privacy.com. 
               https://www.privacy.com/blog/what-are-data-brokers
+            </li>
+
+            <li className="text-lg">
+             Murgia, M., & TEDxExeter. (2017). How data brokers sold my identity | Madhumita Murgia | TEDxExeter. In TEDx. https://youtu.be/AU66C6HePfg
             </li>
 
             <li className="text-lg">
@@ -41,10 +45,13 @@ const References = () => {
               Valle, G. D. (2024, September 19). FTC study: social media and video streaming companies are spying on users. The Verge. 
               https://www.theverge.com/2024/9/19/24249073/ftc-data-retention-privacy-report-facebook-meta-youtube-reddit?
             </li>
-            
+
+          
             <li className="text-lg">
-              [Author Last Name], [First Initial]. ([Year]). [Title of article]. [Name of Journal or Publication], [Volume](Issue), [Page range]. [DOI or URL]
+              Vox Media. (2020). How ads follow you around the internet. In YouTube. https://youtu.be/HFyaW50GFOs
             </li>
+
+            
           </ol>
         </div>
       </div>
