@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Layout>
       <HeroSection
-        title="Someone knows you're on this site. Without you knowing."
+        title="Someone knows you're on this site. You don't know them though."
         imageSrc="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5"
         imageAlt="Describe: Abstract digital representation of data mining"
       />
