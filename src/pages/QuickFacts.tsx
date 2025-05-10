@@ -17,7 +17,7 @@ const QuickFacts = () => {
           {/* Infographic Image */}
           <div className="bg-gray-100 border border-gray-300 mb-8 flex items-center justify-center">
             <img
-              src="/Digital_Tracking_Infographic.PNG" // Adjust the path if necessary
+              src="/scam-photos/Digital_Tracking_Infographic.PNG" // Adjust the path if necessary
               alt="Digital Tracking Infographic"
               className="max-w-full h-auto"
             />
@@ -29,7 +29,7 @@ const QuickFacts = () => {
               Download a printable PDF version
             </p>
             <a 
-              href="/Digital_Tracking_Infographic.pdf" // Adjust the file name as necessary
+              href="/scam-photos/Digital_Tracking_Infographic.pdf" // Adjust the file name as necessary
               className="text-primary hover:text-primary/80 underline"
               aria-label="Download PDF version of infographic"
             >
