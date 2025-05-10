@@ -17,7 +17,7 @@ const QuickFacts = () => {
           {/* Infographic Image */}
           <div className="bg-gray-100 border border-gray-300 mb-8 flex items-center justify-center">
             <img
-              src="/Digital_Tracking_Infographic.png" // Adjust the path if necessary
+              src="/Digital_Tracking_Infographic.PNG" // Adjust the path if necessary
               alt="Digital Tracking Infographic"
               className="max-w-full h-auto"
             />
@@ -42,7 +42,7 @@ const QuickFacts = () => {
             <p className="text-center mb-2">
               Average data points a broker holds on one person
             </p>
-            <Progress value={1000} max={1500} className="h-4" />
+              <Progress value={1000} max={1500} className="h-4" />
             <p className="text-right text-sm mt-1">1000 / 1500</p>
           </div>
         </div>

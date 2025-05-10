@@ -19,13 +19,12 @@ const Research = () => {
           {/* Google Slides placeholder */}
           <div className="bg-gray-100 border border-gray-300 h-[370px] w-full max-w-[800px] mx-auto mb-8 flex items-center justify-center">
             <p className="text-gray-500 text-center p-4">
-            <iframe
-              src="https://www.loom.com/embed/f861bbe1a003481da4f9598f3f096688"
-              frameBorder="0"
-              allowFullScreen
-              className="w-full h-[370px] w-[800px] "
-              title="Loom Video"
-            ></iframe>
+                <iframe
+                  src="https://www.loom.com/embed/f861bbe1a003481da4f9598f3f096688"
+                  allowFullScreen
+                  className="w-full h-[370px] w-[800px] "
+                  title="Loom Video">
+                </iframe>
             </p>
           </div>
           
