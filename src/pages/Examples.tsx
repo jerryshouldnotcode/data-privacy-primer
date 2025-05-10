@@ -51,9 +51,11 @@ const Examples = () => {
               <div key={example.id} className="border border-gray-200 rounded-lg overflow-hidden">
                 {/* Screenshot placeholder */}
                 <div className="bg-gray-100 h-48 flex items-center justify-center">
-                  <p className="text-gray-500 text-center p-2">
-                    Redacted screenshot #{example.id}
-                  </p>
+                  <img
+                    src={`/scam-photos/IMG_696${example.id}.PNG`}
+                    alt={`Scam example ${example.id}`}
+                    className="object-cover h-full w-full"
+                  />
                 </div>
                 {/* Caption */}
                 <div className="p-4">
