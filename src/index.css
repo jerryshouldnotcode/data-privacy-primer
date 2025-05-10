@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
+/*  Tailwind’s magic directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
-
+/* ---------------------------------------------------
+   |  Custom properties (unchanged from your draft)  |
+   --------------------------------------------------- */
 @layer base {
   :root {
+    /* light-mode tokens */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -16,7 +20,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 157 100% 20%; /* USF-green #006747 */
+    --primary: 157 100% 20%;      /* USF green  */
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -48,6 +52,7 @@
   }
 
   .dark {
+    /* dark-mode tokens */
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
 
@@ -75,6 +80,7 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -86,43 +92,48 @@
   }
 }
 
+/* ---------------------------------------------------
+   |  Global element styles / resets                  |
+   --------------------------------------------------- */
 @layer base {
-  * {
-    @apply border-border;
-  }
+  /* Box-sizing reset (way cheaper than a universal border) */
+  *, *::before, *::after { @apply box-border; }
 
   body {
-    @apply bg-background text-foreground font-mono;
+    @apply bg-background text-foreground font-mono antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold text-primary font-mono;
+    @apply font-semibold text-primary;
   }
-  
+
   code, pre {
     @apply font-mono;
   }
 }
 
+/* ---------------------------------------------------
+   |  Components                                      |
+   --------------------------------------------------- */
 @layer components {
   .tech-card {
-    @apply border border-gray-200 bg-white/80 backdrop-blur-sm shadow-sm rounded-md p-4 hover:shadow-terminal transition-all duration-300;
+    @apply border border-border bg-white/80 backdrop-blur-sm shadow-sm rounded-md p-4 hover:shadow-terminal transition-all duration-300;
   }
-  
+
   .tech-button {
-    @apply bg-primary hover:bg-primary/90 text-white font-mono tracking-wide;
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground font-mono tracking-wide px-4 py-2 rounded-lg;
   }
-  
+
   .terminal-text {
     @apply font-mono text-primary relative;
   }
-  
+
   .terminal-text::after {
     content: "|";
     @apply animate-terminal-blink ml-0.5;
   }
-  
+
   .tech-border {
-    @apply border border-gray-300 rounded-md p-4;
+    @apply border border-border rounded-md p-4;
   }
 }

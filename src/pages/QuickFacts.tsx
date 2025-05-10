@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import HeroSection from '@/components/HeroSection';
@@ -15,11 +14,13 @@ const QuickFacts = () => {
       
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
-          {/* Canva infographic placeholder */}
-          <div className="bg-gray-100 border border-gray-300 h-[2000px] w-full max-w-[800px] mb-8 flex items-center justify-center">
-            <p className="text-gray-500 text-center p-4">
-              Center a vertical Canva infographic placeholder (800 × 2000 px)
-            </p>
+          {/* Infographic Image */}
+          <div className="bg-gray-100 border border-gray-300 mb-8 flex items-center justify-center">
+            <img
+              src="/Digital Tracking Infographic.png" // Adjust the path if necessary
+              alt="Digital Tracking Infographic"
+              className="max-w-full h-auto"
+            />
           </div>
           
           {/* PDF download */}
@@ -28,7 +29,7 @@ const QuickFacts = () => {
               Download a printable PDF version
             </p>
             <a 
-              href="#" 
+              href="/Digital_Tracking_Infographic.pdf" // Adjust the file name as necessary
               className="text-primary hover:text-primary/80 underline"
               aria-label="Download PDF version of infographic"
             >
@@ -41,7 +42,7 @@ const QuickFacts = () => {
             <p className="text-center mb-2">
               Average data points a broker holds on one person
             </p>
-            <Progress value={800} max={1500} className="h-4" />
+            <Progress value={1000} max={1500} className="h-4" />
             <p className="text-right text-sm mt-1">1000 / 1500</p>
           </div>
         </div>
