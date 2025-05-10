@@ -26,8 +26,8 @@ const Examples = () => {
             {/* Left column: NYT iframe placeholder */}
             <div className="bg-gray-100 border border-gray-300 h-[400px] flex items-center justify-center">
               <p className="text-gray-500 text-center p-4">
-                <iframe src="https://www.nytimes.com/interactive/2014/science/tracking-the-trackers.html" width="100%" height="100%" frameBorder="0" allowFullScreen>
-                NYT's "Tracking the Trackers" interactive</iframe>
+                <iframe src="https://www.zdnet.com/article/ftc-report-exposes-massive-data-collection-by-social-media-brands-how-to-protect-yourself/" width="400px" height="300h" frameBorder="0" >
+                ZDNet's article on data protection</iframe>
               </p>
             </div>
             
