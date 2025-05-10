@@ -17,7 +17,7 @@ const QuickFacts = () => {
           {/* Infographic Image */}
           <div className="bg-gray-100 border border-gray-300 mb-8 flex items-center justify-center">
             <img
-              src="/Digital Tracking Infographic.png" // Adjust the path if necessary
+              src="/Digital_Tracking_Infographic.png" // Adjust the path if necessary
               alt="Digital Tracking Infographic"
               className="max-w-full h-auto"
             />
