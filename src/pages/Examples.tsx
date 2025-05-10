@@ -52,7 +52,7 @@ const Examples = () => {
                 {/* Screenshot placeholder */}
                 <div className="bg-gray-100 h-48 flex items-center justify-center">
                   <img
-                    src={`/scam-photos/IMG_696${example.id}.PNG`}
+                    src={`/scam-photos/IMG_696${example.id}${example.id === 1 ? '.JPG' : '.PNG'}`}
                     alt={`Scam example ${example.id}`}
                     className="object-cover h-full w-full"
                   />
